@@ -6,7 +6,7 @@
 1. Tải source code về:
 
    ```bash
-   git clone https://github.com/tuananbg/laptop_shop
+   git clone 
    ```
 2. Mở xampp và vào trang http://localhost/phpmyadmin/ tạo 1 database mới và import cơ sở dữ liệu trong file shoplaptop.sql trong source code.
 
