@@ -1,4 +1,4 @@
-<!-- author: tuananbg -->
+
 # Dự án cửa hàng bán Laptop
 
 ## Getting Started
