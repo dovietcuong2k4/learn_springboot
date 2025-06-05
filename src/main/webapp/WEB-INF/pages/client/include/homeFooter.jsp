@@ -25,7 +25,7 @@
 		<div class="wrap">
 		<div class="copy-right">
 			<hr>
-			<p>&copy; Hoàng Tuấn An(Leader) - Đặng Thế Hoàn - Nguyễn Văn Luận. </p>
+			<p>&copy; Cường - Anh - Huy - Thiện - Lộc. </p>
 			<br>
 			<p>Design by Group 4</p>
 		</div>

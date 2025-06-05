@@ -254,10 +254,10 @@ CREATE TABLE `nguoi_dung` (
 LOCK TABLES `nguoi_dung` WRITE;
 /*!40000 ALTER TABLE `nguoi_dung` DISABLE KEYS */;
 INSERT INTO `nguoi_dung` VALUES 
-(1,NULL,'admin@gmail.com','Hoàng Tuấn AN','$2a$10$/VFMNUPBKNVRMjxPFCYKZ.lKahoLQda0EaAxdqoun1w3DqwNLa2me','123456789'),
-(2,NULL,'member@gmail.com','Hoàng Tuấn An','$2a$10$j7Upgupou72GBmukz0G6pOATk3wlCAgaoFCEqAhSvLToD/V/1wlpu',NULL),
-(3,NULL,'shipper@gmail.com','Hoàng Tuấn An','$2a$10$u2B29HDxuWVYY3fUJ8R2qunNzXngfxij5GpvlFAEtIz3JpK/WFXF2',NULL),
-(4,'Ha Noi','nguoidung@gmail.com','Văn Luận','$2a$10$ZCqCO9gSWt8A8HNXAWq8luqfNbJm0uG3PsUlzry0aRLwO3VHQZTmy','123456');
+(1,NULL,'admin@gmail.com','Đỗ Việt Cường','$2a$10$/VFMNUPBKNVRMjxPFCYKZ.lKahoLQda0EaAxdqoun1w3DqwNLa2me','123456789'),
+(2,NULL,'member@gmail.com','Đỗ Việt Cường','$2a$10$j7Upgupou72GBmukz0G6pOATk3wlCAgaoFCEqAhSvLToD/V/1wlpu',NULL),
+(3,NULL,'shipper@gmail.com','Đỗ Việt Cường','$2a$10$u2B29HDxuWVYY3fUJ8R2qunNzXngfxij5GpvlFAEtIz3JpK/WFXF2',NULL),
+(4,'Ha Noi','nguoidung@gmail.com','Vi Hải Anh','$2a$10$ZCqCO9gSWt8A8HNXAWq8luqfNbJm0uG3PsUlzry0aRLwO3VHQZTmy','123456');
 /*!40000 ALTER TABLE `nguoi_dung` ENABLE KEYS */;
 UNLOCK TABLES;
 
