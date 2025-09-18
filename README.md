@@ -6,9 +6,9 @@
 1. Tải source code về:
 
    ```bash
-   git clone https://github.com/dovietcuong2k4/javancnhom4.git
+   git clone 
    ```
-2. Mở xampp và vào trang http://localhost/phpmyadmin/ tạo 1 database mới và import cơ sở dữ liệu trong file shoplaptop.sql trong source code.
+2. Import cơ sở dữ liệu trong file shoplaptop.sql trong source code.
 
 3. Sử dụng Intellij để chạy source code.
 ### Tài khoản Admin
@@ -16,6 +16,9 @@
 - Password: 123456
 ### Tài khoản Khách hàng
 - Username: member@gmail.com
+- Password: 123456
+### Tài khoản Giao hàng
+- Username: shipper@gmail.com
 - Password: 123456
 ## Installing
 

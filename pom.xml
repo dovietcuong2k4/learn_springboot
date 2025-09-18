@@ -111,11 +111,6 @@
 			<artifactId>javassist</artifactId>
 			<version>3.25.0-GA</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.5.0</version> <!-- Phiên bản mới nhất hiện tại -->
-		</dependency>
 	</dependencies>
 
 	<build>
