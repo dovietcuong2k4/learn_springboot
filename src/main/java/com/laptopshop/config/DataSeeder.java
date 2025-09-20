@@ -32,6 +32,10 @@ public class DataSeeder implements ApplicationListener<ContextRefreshedEvent> {
 			roleRepository.save(new VaiTro("ROLE_ADMIN"));
 		}
 
+		if (roleRepository.findByTenVaiTro("ROLE_STAFF") == null) {
+			roleRepository.save(new VaiTro("ROLE_STAFF"));
+		}
+
 		if (roleRepository.findByTenVaiTro("ROLE_MEMBER") == null) {
 			roleRepository.save(new VaiTro("ROLE_MEMBER"));
 		}
@@ -45,7 +49,7 @@ public class DataSeeder implements ApplicationListener<ContextRefreshedEvent> {
 			NguoiDung admin = new NguoiDung();
 			admin.setEmail("admin@gmail.com");
 			admin.setPassword(passwordEncoder.encode("123456"));
-			admin.setHoTen("Nguyễn Xuân Nam");
+			admin.setHoTen("Đỗ Việt Cường");
 			admin.setSoDienThoai("123456789");
 			HashSet<VaiTro> roles = new HashSet<>();
 			roles.add(roleRepository.findByTenVaiTro("ROLE_ADMIN"));
@@ -64,7 +68,18 @@ public class DataSeeder implements ApplicationListener<ContextRefreshedEvent> {
 			member.setVaiTro(roles);
 			userRepository.save(member);
 		}
-		
+
+		// Staff account
+		if (userRepository.findByEmail("staff@gmail.com") == null) {
+			NguoiDung member = new NguoiDung();
+			member.setEmail("staff@gmail.com");
+			member.setPassword(passwordEncoder.encode("123456"));
+			HashSet<VaiTro> roles = new HashSet<>();
+			roles.add(roleRepository.findByTenVaiTro("ROLE_STAFF"));
+			member.setVaiTro(roles);
+			userRepository.save(member);
+		}
+
 		// Shipper account
 		if (userRepository.findByEmail("shipper@gmail.com") == null) {
 			NguoiDung member = new NguoiDung();

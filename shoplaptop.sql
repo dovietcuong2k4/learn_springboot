@@ -256,6 +256,7 @@ LOCK TABLES `nguoi_dung` WRITE;
 INSERT INTO `nguoi_dung` VALUES 
 (1,NULL,'admin@gmail.com','Đỗ Việt Cường','$2a$10$/VFMNUPBKNVRMjxPFCYKZ.lKahoLQda0EaAxdqoun1w3DqwNLa2me','123456789'),
 (2,NULL,'member@gmail.com','Đỗ Việt Cường','$2a$10$j7Upgupou72GBmukz0G6pOATk3wlCAgaoFCEqAhSvLToD/V/1wlpu',NULL),
+(5,NULL,'staff@gmail.com','Đỗ Việt Cường','$2a$10$u2B29HDxuWVYY3fUJ8R2qunNzXngfxij5GpvlFAEtIz3JpK/WFXF2',NULL),
 (3,NULL,'shipper@gmail.com','Đỗ Việt Cường','$2a$10$u2B29HDxuWVYY3fUJ8R2qunNzXngfxij5GpvlFAEtIz3JpK/WFXF2',NULL),
 (4,'Ha Noi','nguoidung@gmail.com','Vi Hải Anh','$2a$10$ZCqCO9gSWt8A8HNXAWq8luqfNbJm0uG3PsUlzry0aRLwO3VHQZTmy','123456');
 /*!40000 ALTER TABLE `nguoi_dung` ENABLE KEYS */;
@@ -284,7 +285,7 @@ CREATE TABLE `nguoidung_vaitro` (
 
 LOCK TABLES `nguoidung_vaitro` WRITE;
 /*!40000 ALTER TABLE `nguoidung_vaitro` DISABLE KEYS */;
-INSERT INTO `nguoidung_vaitro` VALUES (1,1),(1,2),(2,2),(4,2),(3,3);
+INSERT INTO `nguoidung_vaitro` VALUES (1,1),(2,2),(4,2),(3,3),(5,4);
 /*!40000 ALTER TABLE `nguoidung_vaitro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -394,7 +395,7 @@ CREATE TABLE `vai_tro` (
 
 LOCK TABLES `vai_tro` WRITE;
 /*!40000 ALTER TABLE `vai_tro` DISABLE KEYS */;
-INSERT INTO `vai_tro` VALUES (1,'ROLE_ADMIN'),(2,'ROLE_MEMBER'),(3,'ROLE_SHIPPER');
+INSERT INTO `vai_tro` VALUES (1,'ROLE_ADMIN'),(2,'ROLE_MEMBER'),(3,'ROLE_SHIPPER'),(4,'ROLE_STAFF');
 /*!40000 ALTER TABLE `vai_tro` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
